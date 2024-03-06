@@ -40,7 +40,7 @@ export default (monitor: number) => Widget.Window({
     exclusivity: "exclusive",
     anchor: pos.as(pos => [pos, "right", "left"]),
     child: Widget.CenterBox({
-        css: "min-width: 2px; min-height: 2px;",
+        css: "min-width: 2px; min-height: 60px;",
         startWidget: Widget.Box({
             hexpand: true,
             children: start.bind().as(s => s.map(w => widget[w]())),
