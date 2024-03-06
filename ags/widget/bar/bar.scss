@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-$bar-spacing: $spacing;// * .3;
+$bar-spacing: $spacing * 1.3;
 $button-radius: $radius;
 
 @mixin panel-button($flat: true, $reactive: true) {
