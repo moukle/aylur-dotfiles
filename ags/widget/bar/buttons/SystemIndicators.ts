@@ -84,6 +84,7 @@ const AudioIndicator = () => Widget.Icon({
 
 export default () => PanelButton({
     window: "quicksettings",
+    class_name: "systemindicators",
     on_clicked: () => App.toggleWindow("quicksettings"),
     on_scroll_up: () => audio.speaker.volume += 0.02,
     on_scroll_down: () => audio.speaker.volume -= 0.02,

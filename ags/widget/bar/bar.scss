@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-$bar-spacing: $spacing * .3;
+$bar-spacing: $spacing * 1.3;
 $button-radius: $radius;
 
 @mixin panel-button($flat: true, $reactive: true) {
@@ -31,6 +31,10 @@ $button-radius: $radius;
 
             @include accs-button($flat: false);
         }
+    }
+
+    .systemindicators>box {
+        @include spacing($spacing: 5em); //  TODO: not working
     }
 
     .launcher {
@@ -71,6 +75,9 @@ $button-radius: $radius;
                 min-width: 20pt;
                 min-height: 12pt;
             }
+
+            &.monitorPrimary   { background: $primary-bg; }
+            &.monitorSecondary { background: $secondary-bg; }
         }
 
         &.active,
